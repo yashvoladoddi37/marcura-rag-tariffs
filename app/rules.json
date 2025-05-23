@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "source_document": "Tariff Book April 2024 - March 2025",
+    "source_file": "south_africa_port_tariffs.pdf",
+    "version": "April 2024 to March 2025",
+    "notes": "Rates are subject to VAT at 15%. All calculations derived from official tariff tables found in the source document. Port-specific variations and conditions are noted explicitly under each tariff category."
+  },
+  "tariffs": {
+    "light_dues": {
+      "description": "Charged based on gross tonnage (GT). Valid across ports if vessel stays within South African waters for \u226460 days.",
+      "calculation": {
+        "formula": "117.08 ZAR per 100 GT or part thereof",
+        "formula_rate": 117.08,
+        "basis": "Section 1.1.1, p. 9-10",
+        "conditions": [
+          "Charged at first South African port of call.",
+          "Valid for up to 60 days if vessel does not leave SA territorial waters."
+        ]
+      },
+      "exemptions": [
+        "SAPS and SANDF vessels",
+        "SAMSA vessels",
+        "SA Medical & Research vessels",
+        "Non-selfpropelled small and pleasure vessels not used for gain"
+      ]
+    },
+    "port_dues": {
+      "description": "Calculated per 100 GT per 24 hours of stay in port. Base and daily incremental fee apply.",
+      "calculation": {
+        "formula": "192.73 ZAR per 100 GT entry + 57.79 ZAR per 100 GT per day",
+        "entry_fee": 192.73,
+        "daily_fee": 57.79,
+        "basis": "Section 4.1.1, p. 21-22",
+        "conditions": [
+          "Charged from port entry to exit.",
+          "Time-based component prorated if <24 hours."
+        ]
+      },
+      "exemptions": [
+        "SAPS, SANDF, SAMSA, and research vessels"
+      ]
+    },
+    "vts_dues": {
+      "description": "Vessel Traffic Services fee per GT per port call, varies by port.",
+      "calculation": {
+        "Durban_Saldanha": {
+          "rate_per_gt": 0.65,
+          "minimum_fee": 235.52
+        },
+        "other_ports": {
+          "rate_per_gt": 0.54,
+          "minimum_fee": 235.52
+        },
+        "minimum_fee": 235.52,
+        "basis": "Section 2.1.1, p. 11"
+      },
+      "exemptions": [
+        "SAPS, SANDF, SAMSA, and research vessels"
+      ]
+    },
+    "pilotage_dues": {
+      "description": "Fee for pilot services. Base fee plus per 100 GT, varies by port.",
+      "calculation": {
+        "Durban": {
+          "base_fee": 5399.94,
+          "per_100_gt": 81.76
+        },
+        "Cape_Town": {
+          "base_fee": 2890.35,
+          "per_100_gt": 41.13
+        },
+        "Richards_Bay": {
+          "base_fee": 5399.94,
+          "per_100_gt": 81.76
+        },
+        "Ngqura": {
+          "base_fee": 3629.68,
+          "per_100_gt": 48.25
+        },
+        "Port_Elizabeth": {
+          "base_fee": 3629.68,
+          "per_100_gt": 48.25
+        },
+        "Saldanha": {
+          "base_fee": 6226.75,
+          "per_100_gt": 77.38
+        },
+        "East_London": {
+          "base_fee": 3629.68,
+          "per_100_gt": 50.16
+        },
+        "Mossel_Bay": {
+          "base_fee": 3629.68,
+          "per_100_gt": 62.28
+        }
+      },
+      "basis": "Section 3.3, p. 13",
+      "surcharges": [
+        "50% for after-hours service",
+        "50% for vessel without power or defective equipment"
+      ]
+    },
+    "towage_dues": {
+      "description": "Tug assistance services charged by vessel GT, port-specific.",
+      "calculation": {
+        "Durban": {
+          "base_fee_2001_to_10000": 11168.45,
+          "increment_per_100_gt_2001+": 237.53,
+          "increment_per_100_gt_10001+": 73.1,
+          "increment_per_100_gt_50001+": 21.5,
+          "increment_per_100_gt_100001+": 21.5
+        },
+        "Cape_Town": {
+          "base_fee_2001_to_10000": 11168.45,
+          "increment_per_100_gt_2001+": 237.53,
+          "increment_per_100_gt_10001+": 73.1,
+          "increment_per_100_gt_50001+": 21.5,
+          "increment_per_100_gt_100001+": 21.5
+        },
+        "Richards_Bay": {
+          "base_fee_2001_to_10000": 11168.45,
+          "increment_per_100_gt_2001+": 237.53,
+          "increment_per_100_gt_10001+": 73.1,
+          "increment_per_100_gt_50001+": 21.5,
+          "increment_per_100_gt_100001+": 21.5
+        },
+        "Ngqura": {
+          "base_fee_2001_to_10000": 11168.45,
+          "increment_per_100_gt_2001+": 237.53,
+          "increment_per_100_gt_10001+": 73.1,
+          "increment_per_100_gt_50001+": 21.5,
+          "increment_per_100_gt_100001+": 21.5
+        },
+        "Port_Elizabeth": {
+          "base_fee_2001_to_10000": 11168.45,
+          "increment_per_100_gt_2001+": 237.53,
+          "increment_per_100_gt_10001+": 73.1,
+          "increment_per_100_gt_50001+": 21.5,
+          "increment_per_100_gt_100001+": 21.5
+        },
+        "Saldanha": {
+          "base_fee_2001_to_10000": 15378.78,
+          "increment_per_100_gt_2001+": 327.43,
+          "increment_per_100_gt_10001+": 103.23,
+          "increment_per_100_gt_50001+": 27.97,
+          "increment_per_100_gt_100001+": 47.32
+        },
+        "East_London": {
+          "base_fee_2001_to_10000": 8152.14,
+          "increment_per_100_gt_2001+": 200.97,
+          "increment_per_100_gt_10001+": 66.67,
+          "increment_per_100_gt_50001+": 25.8,
+          "increment_per_100_gt_100001+": 21.5
+        },
+        "Mossel_Bay": {
+          "base_fee_2001_to_10000": 8985.57,
+          "increment_per_100_gt_2001+": 173.37,
+          "increment_per_100_gt_10001+": 60.21,
+          "increment_per_100_gt_50001+": 0,
+          "increment_per_100_gt_100001+": 0
+        }
+      },
+      "basis": "Section 3.6, p. 15",
+      "surcharges": [
+        "25% outside working hours",
+        "50% for additional tug",
+        "100% for unpowered vessels needing extra tug"
+      ]
+    },
+    "running_of_vessel_lines_dues": {
+      "description": "Launch/mooring boat fees for running vessel lines. Port-specific flat rate.",
+      "calculation": {
+        "Durban": {
+          "flat_fee": 19639.5
+        },
+        "Cape_Town": {
+          "flat_fee": 2370.84
+        },
+        "Richards_Bay": {
+          "flat_fee": 0
+        },
+        "Ngqura": {
+          "flat_fee": 2266.73
+        },
+        "Port_Elizabeth": {
+          "flat_fee": 2266.73
+        },
+        "Saldanha": {
+          "flat_fee": 2085.59
+        },
+        "East_London": {
+          "flat_fee": 1654.56
+        },
+        "Mossel_Bay": {
+          "flat_fee": 1654.56
+        }
+      },
+      "basis": "Section 3.9, p. 19",
+      "surcharges": [
+        "Extra charges apply for service delays or out-of-hours"
+      ]
+    }
+  }
+}

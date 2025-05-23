@@ -1,0 +1,117 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# South African Port Tariff Calculation Assignment
+
+## Objective
+
+Build a solution (RAG application, agentic workflow, or any other approach) that can parse a natural language user query and calculate port-related tariffs based on the provided tariff document.
+
+## Tools & APIs
+
+You may use any framework or LLM of your choice. Gemini LLMs are suggested (with a free tier of 5–30 API calls/minute).
+
+---
+
+## Tariffs to Calculate
+
+The solution must compute the following tariffs:
+
+- **Light Dues**
+- **Port Dues**
+- **Towage Dues**
+- **Vehicle Traffic Services (VTS) Dues**
+- **Pilotage Dues**
+- **Running of Vessel Lines Dues**
+
+---
+
+## Example User Query Format
+
+> "Calculate the different tariffs payable by the following vessel berthing at the port of `<Durban | Saldanha | Richard's Bay>`:
+> 
+> `<vessel_info>`"
+
+---
+
+## Example Vessel Info (Port of Durban)
+
+### General
+
+- **Vessel Name:** XYZ  
+- **Built:** 2010
+
+### Main Details
+
+- **Type:** Bulk Carrier  
+- **DWT:** 93,274  
+- **GT / NT:** 51,300 / 31,192  
+- **LOA (m):** 229.2  
+- **Beam (m):** 38  
+- **Moulded Depth (m):** 20.7  
+- **LBP:** 222  
+- **Drafts SW S / W / T (m):** 14.9 / 0 / 0  
+- **Suez GT / NT:** - / 49,069  
+
+### DRY
+
+- **Number of Holds:** 7
+
+### Cargo Details
+
+- **Cargo Quantity:** 40,000 MT  
+- **Days Alongside:** 3.39 days  
+- **Arrival Time:** 15 Nov 2024 10:12  
+- **Departure Time:** 22 Nov 2024 13:00
+
+### Activity/Operations
+
+- **Activity:** Exporting Iron Ore  
+- **Number of Operations:** 2
+
+---
+
+## Expected Tariff Values (Ground Truth for Validation)
+
+For the above vessel at **Durban**, your solution should return:
+
+- **Light Dues:** ZAR 60,062.04  
+- **Port Dues:** ZAR 199,549.22  
+- **Towage Dues:** ZAR 147,074.38  
+- **VTS Dues:** ZAR 33,315.75  
+- **Pilotage Dues:** ZAR 47,189.94  
+- **Running of Vessel Lines Dues:** ZAR 19,639.50  
+
+---
+
+## Deliverables
+- A GitHub repository containing:
+  - Your solution code
+  - The tariff PDF used for RAG/LLM ingestion
+  - A `README.md` with:
+    - Setup instructions
+    - How to run the script(s)
+    - Example queries and output
+- (Optional) A deployed API endpoint with instructions for consumption
+
+---
+
+## Evaluation Criteria
+
+1. **Accuracy**  
+   - Correctness of tariff calculations  
+   - Deviation from the expected values  
+
+2. **Level of Automation**  
+   - Accuracy with minimal explicit prompting about how to calculate each tariff  
+
+3. **Code Quality**  
+   - Modular, refactored, micro-service design (if applicable)  
+   - Smooth execution without manual debugging  
+
+4. **Approach**  
+   - Techniques and architecture used (e.g., RAG, agentic workflows, chunking strategies, etc.)  
+
+---
