@@ -13,7 +13,7 @@ The application integrates with Google's Gemini Pro LLM to parse natural languag
 
 ## Architecture
 
-This project follows MAANG-level engineering best practices:
+This project some best practices:
 
 - **Clean Architecture**: Separation of concerns with modular components
 - **API-First Design**: Well-documented FastAPI endpoints
